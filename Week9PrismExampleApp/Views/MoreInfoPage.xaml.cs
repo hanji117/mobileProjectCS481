@@ -2,7 +2,7 @@
 
 namespace Week9PrismExampleApp.Views
 {
-    public partial class MoreInfoPage : ContentPage
+    public partial class MoreInfoPage : TabbedPage
     {
         public MoreInfoPage()
         {
