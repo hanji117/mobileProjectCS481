@@ -44,6 +44,11 @@ namespace Week9PrismExampleApp.Models
 
             [JsonProperty("wind")]
             public Wind Wind { get; set; }
+
+            [JsonProperty("time")]
+            public TimeSpan TimeSpan { get; set; }
+
+
         }
 
         public partial class Coord
@@ -59,6 +64,12 @@ namespace Week9PrismExampleApp.Models
         {
             [JsonProperty("all")]
             public long All { get; set; }
+
+            [JsonProperty("unit")]
+            public long Unit { get; set; }
+
+            [JsonProperty("value")]
+            public long Value { get; set; }
         }
 
         public partial class Main

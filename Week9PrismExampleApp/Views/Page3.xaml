@@ -4,8 +4,11 @@
     x:Class="Week9PrismExampleApp.Views.Page3"
     Title="Page3">
 	<ContentPage.Content>
-        
+      
         <StackLayout>
+              <Button
+            Text="Go Back!"
+            Command="{Binding GoBackCommand}" />
             <Label Text="Page 3" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         </StackLayout>
    

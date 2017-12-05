@@ -5,7 +5,21 @@
     Title="Page1">
 	<ContentPage.Content>
         <StackLayout>
+           <Button
+            Text="Go Back!"
+            Command="{Binding GoBackCommand}" />
             <Label Text="Page 1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+         
+            <Label
+                Text="{Binding WeatherItem.Wind.Speed, StringFormat='Wind Speed: {0}'}" />
+            <Label
+                Text="{Binding WeatherItem.Main.TempMax, StringFormat='Max Temp: {0}'}" />
+            <Label
+                Text="{Binding WeatherItem.TimeSpan.From, StringFormat='Time: {0}'}" />
+            
+            
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>
+
