@@ -18,6 +18,7 @@ namespace Week9PrismExampleApp.ViewModels
         public DelegateCommand NavToNewPageCommand { get; set; }
         public DelegateCommand GetWeatherForLocationCommand { get; set; }
         public DelegateCommand<WeatherItem> NavToMoreInfoPageCommand { get; set; }
+        public DelegateCommand<WeatherItem> DeleteItemCommand { get; set; }
 
         private string _buttonText;
         public string ButtonText
@@ -56,6 +57,7 @@ namespace Week9PrismExampleApp.ViewModels
             NavToNewPageCommand = new DelegateCommand(NavToNewPage);
             GetWeatherForLocationCommand = new DelegateCommand(GetWeatherForLocation);
             NavToMoreInfoPageCommand = new DelegateCommand<WeatherItem>(NavToMoreInfoPage);
+            DeleteItemCommand = new DelegateCommand<WeatherItem>(DeleteItem);
 
             Title = "Xamarin Forms Application + Prism";
             ButtonText = "Add Name";
@@ -95,6 +97,16 @@ namespace Week9PrismExampleApp.ViewModels
             navParams.Add("NavFromPage", "MainPageViewModel");
             await _navigationService.NavigateAsync("SamplePageForNavigation", navParams);
         }
+
+        private void DeleteItem(WeatherItem weatherItem)
+        {
+            var navParams = new NavigationParameters();
+            navParams.Add("WeatherItemInfo", weatherItem);
+
+            WeatherCollection.Remove(weatherItem);
+
+        }
+
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {

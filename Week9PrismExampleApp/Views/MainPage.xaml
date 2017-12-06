@@ -40,6 +40,14 @@
                                 Command="{Binding NavToMoreInfoPageCommand}"
                                 CommandParameter="{Binding Source={x:Reference WeatherItemCell}, Path=BindingContext}"
                                 Text="More" />
+                            <MenuItem
+                                x:Name="DeleteButton"
+                                AutomationId="DeleteButton"
+                                BindingContext="{Binding Source={x:Reference WeatherListView}, Path=BindingContext}"
+                                Command="{Binding DeleteItemCommand}"
+                                CommandParameter="{Binding Source={x:Reference WeatherItemCell}, Path=BindingContext}"
+                                IsDestructive = "true"
+                                Text="Delete" />
                         </ViewCell.ContextActions>
                         <ViewCell.View>
                             <StackLayout
