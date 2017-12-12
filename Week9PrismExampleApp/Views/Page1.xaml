@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Week9PrismExampleApp.Views.Page1"
-    Title="Page1"
-    BackgroundColor="{StaticResource PageBgColor}">
+    Title="Maximum Temperature"
+    BackgroundColor="{StaticResource PageBgColor}"
+    >
     <ContentPage.Resources>
         <ResourceDictionary>
              <Color x:Key="PageBgColor">#1350b2</Color>
@@ -24,15 +25,12 @@
 
          
             <Label
-                Text="{Binding WeatherItem.Wind.Speed, StringFormat='Wind Speed: {0}'}" 
+                Text="{Binding List.Wind.Speed, StringFormat='Wind Speed: {0}'}" 
                 TextColor="{StaticResource NormalTextColor}"/>
             <Label
                 Text="{Binding WeatherItem.Main.TempMax, StringFormat='Max Temp: {0}'}" 
                 TextColor="{StaticResource NormalTextColor}"/>
-            <Label
-                Text="{Binding WeatherItem.TimeSpan.From, StringFormat='Time: {0}'}" 
-                TextColor="{StaticResource NormalTextColor}"/>
-            
+           
             
         </StackLayout>
     </ContentPage.Content>
