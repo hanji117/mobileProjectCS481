@@ -48,6 +48,13 @@ namespace Week9PrismExampleApp.ViewModels
             set { SetProperty(ref _weatherCollection, value); }
         }
 
+        private ObservableCollection<List> _listWeatherData = new ObservableCollection<List>();
+        public ObservableCollection<List> ListWeatherData
+        {
+            get { return _listWeatherData; }
+            set { SetProperty(ref _listWeatherData, value); }
+        }
+
         INavigationService _navigationService;
 
         public MainPageViewModel(INavigationService navigationService)
@@ -88,7 +95,13 @@ namespace Week9PrismExampleApp.ViewModels
                 var content = await response.Content.ReadAsStringAsync();
                 weatherData = WeatherItem.FromJson(content);
             }
+            PopulateListData(weatherData);
             WeatherCollection.Add(weatherData);
+        }
+
+        public void PopulateListData(WeatherItem singleWeatherItem)
+        {
+            ListWeatherData.Add(singleWeatherItem.List[0]);
         }
 
         private async void NavToNewPage()

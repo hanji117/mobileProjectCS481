@@ -73,7 +73,7 @@
                                 Orientation="Horizontal">
                                 <Label
                                     x:Name="LocationNameLabel"
-                                    Text="{Binding Name}"
+                                    Text="{Binding City.Name}"
                                     TextColor="{StaticResource NormalTextColor}"
                                     VerticalOptions="Center"
                                     Margin="10" />

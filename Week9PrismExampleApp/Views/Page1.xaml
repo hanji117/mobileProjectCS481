@@ -23,12 +23,11 @@
             Command="{Binding GoBackCommand}" />
             <Label Text="Page 1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 
-         
             <Label
-                Text="{Binding List.Wind.Speed, StringFormat='Wind Speed: {0}'}" 
+                Text="{Binding WeatherItem.List.Wind.Speed, StringFormat='Wind Speed: {0}'}" 
                 TextColor="{StaticResource NormalTextColor}"/>
             <Label
-                Text="{Binding WeatherItem.Main.TempMax, StringFormat='Max Temp: {0}'}" 
+                Text="{Binding WeatherItem.List.Main.TempMax, StringFormat='Max Temp: {0}'}" 
                 TextColor="{StaticResource NormalTextColor}"/>
            
             
