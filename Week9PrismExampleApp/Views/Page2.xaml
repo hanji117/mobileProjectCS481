@@ -2,7 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Week9PrismExampleApp.Views.Page2"
-    Title="Rainfall">
+    Title="Rainfall"
+    BackgroundColor="{StaticResource PageBgColor}">
+     <ContentPage.Resources>
+        <ResourceDictionary>
+             <Color x:Key="PageBgColor">#1350b2</Color>
+            <Color x:Key="NormalTextColor">#dae0ea</Color>
+            <Color x:Key="EntryColor">#33373d</Color>
+          <Style x:Key="NewText" TargetType="Button">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+        </ResourceDictionary>
+        </ContentPage.Resources>
 	<ContentPage.Content>
         
         <StackLayout>

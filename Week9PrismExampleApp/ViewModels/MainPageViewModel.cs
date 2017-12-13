@@ -128,6 +128,7 @@ namespace Week9PrismExampleApp.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
+            
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
