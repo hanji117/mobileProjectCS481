@@ -24,12 +24,17 @@
             <Label Text="Page 1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 
             <Label
-                Text="{Binding WeatherItem.List.Wind.Speed, StringFormat='Wind Speed: {0}'}" 
+                Text="{Binding WeatherItem.List[0].Wind.Speed, StringFormat='Wind Speed: {0}'}" 
                 TextColor="{StaticResource NormalTextColor}"/>
+
             <Label
-                Text="{Binding WeatherItem.List.Main.TempMax, StringFormat='Max Temp: {0}'}" 
+                Text="{Binding WeatherItem.List[1].Wind.Speed, StringFormat='Wind Speed: {0}'}" 
                 TextColor="{StaticResource NormalTextColor}"/>
-           
+
+            <Label
+                Text="{Binding WeatherItem.List[2].Wind.Speed, StringFormat='Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+            
             
         </StackLayout>
     </ContentPage.Content>
