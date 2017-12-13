@@ -10,6 +10,10 @@
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
             <Label Text="Page 4" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+            <Label
+                Text="{Binding WeatherItem.List[0].Wind.Speed, StringFormat='12 AM:                       Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
         </StackLayout>
    
 	</ContentPage.Content>

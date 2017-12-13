@@ -24,11 +24,7 @@
         Padding="0,20,0,0"
         HorizontalOptions="Center"
         VerticalOptions="Start">
-        <Button
-            Text="Navigation Example"
-            TextColor="{StaticResource NormalTextColor}"
-            Command="{Binding NavToNewPageCommand}" 
-            Style="{StaticResource NewText}"/>
+       
         <StackLayout
             Orientation="Horizontal"
             HorizontalOptions="CenterAndExpand">

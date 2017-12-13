@@ -10,6 +10,7 @@
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
             <Label Text="Page 2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
         </StackLayout>
     
 	</ContentPage.Content>
