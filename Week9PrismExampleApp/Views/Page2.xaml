@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
     x:Class="Week9PrismExampleApp.Views.Page2"
     Title="Rainfall"
     BackgroundColor="{StaticResource PageBgColor}">
@@ -15,9 +16,11 @@
       </Style>
         </ResourceDictionary>
         </ContentPage.Resources>
+    
     <ContentPage.Content>
-        
+     
         <StackLayout>
+     
             <Button
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />

@@ -23,6 +23,8 @@ namespace Week9PrismExampleApp.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App(new AndroidInitializer()));
+
+            XFGloss.Droid.Library.Init(this, savedInstanceState);
         }
     }
 

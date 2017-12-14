@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Week9PrismExampleApp.Views.Page1"
     Title="Maximum Temperature"
@@ -19,11 +20,12 @@
     <ContentPage.Content>
 
         
-
-
-        
         <StackLayout>
-
+            
+        <xfg:CellGloss.BackgroundGradient>
+        <xfg:Gradient StartColor="Red" EndColor="Maroon"  />
+        </xfg:CellGloss.BackgroundGradient>
+            
             <StackLayout Orientation="Horizontal"
             Spacing="0"
             VerticalOptions="CenterAndExpand">
@@ -39,15 +41,18 @@
                 Text="Play"
                 Clicked="Play_Clicked" />
         </StackLayout>
-    
+        
            <Button
             Text="Go Back!"
-            Command="{Binding GoBackCommand}" />
+            Command="{Binding GoBackCommand}" 
+            />
             <Label Text="WindSpeed Forecast" HorizontalOptions="Center"  />
            
            <Label
                 Text="{Binding WeatherItem.List[0].Wind.Speed, StringFormat='12 AM:                       Wind Speed: {0}'}" 
-                TextColor="{StaticResource NormalTextColor}"/>
+                TextColor="{StaticResource NormalTextColor}"
+            />
+             
             <Label
                 Text="{Binding WeatherItem.List[1].Wind.Speed, StringFormat='3 AM:                        Wind Speed: {0}'}" 
                 TextColor="{StaticResource NormalTextColor}"/>

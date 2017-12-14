@@ -7,6 +7,7 @@ using UIKit;
 
 using Prism.Unity;
 using Microsoft.Practices.Unity;
+using XFGloss;
 
 namespace Week9PrismExampleApp.iOS
 {
@@ -26,6 +27,8 @@ namespace Week9PrismExampleApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            XFGloss.iOS.Library.Init();
 
             LoadApplication(new App(new iOSInitializer()));
 

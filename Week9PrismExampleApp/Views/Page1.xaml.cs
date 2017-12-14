@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-
+using XLabs.Forms.Controls;
+using XFGloss;
 using Xamarin.Forms;
 
 namespace Week9PrismExampleApp.Views
@@ -15,6 +16,7 @@ namespace Week9PrismExampleApp.Views
 
         async void Play_Clicked(object sender, EventArgs e)
         {
+            
             while (true)
             {
                 sun.Source = "sunsprite2";
