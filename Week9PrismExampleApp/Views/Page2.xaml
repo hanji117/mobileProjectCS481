@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
     x:Class="Week9PrismExampleApp.Views.Page2"
-    Title="Rainfall"
+    Title="Humidity"
     BackgroundColor="{StaticResource PageBgColor}">
-     <ContentPage.Resources>
+      <ContentPage.Resources>
         <ResourceDictionary>
              <Color x:Key="PageBgColor">#1350b2</Color>
             <Color x:Key="NormalTextColor">#dae0ea</Color>
@@ -16,7 +17,13 @@
       </Style>
         </ResourceDictionary>
         </ContentPage.Resources>
-    
+        <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="White" StepPercentage="0" />
+            <xfg:GradientStep StepColor="Blue" StepPercentage=".3" />
+            <xfg:GradientStep StepColor="Red" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
     <ContentPage.Content>
      
         <StackLayout>
@@ -24,7 +31,7 @@
             <Button
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
-            <Label Text="Page 2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Label Text="Humidity Forecast" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 
            <!--Rain code-->
             <StackLayout Orientation="Horizontal"
@@ -46,6 +53,37 @@
 
             Clicked="Play_Clicked" />
         </StackLayout>
+
+            <Label
+                Text="{Binding WeatherItem.List[0].Main.Humidity, StringFormat='12 AM:                       Humidity: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"
+            />
+             
+            <Label
+                Text="{Binding WeatherItem.List[1].Main.Humidity, StringFormat='3 AM:                        Humidity: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+            <Label
+                Text="{Binding WeatherItem.List[2].Main.Humidity, StringFormat='6 AM:                        Humidity: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+            <Label
+                Text="{Binding WeatherItem.List[3].Main.Humidity, StringFormat='9 AM:                        Humidity: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+
+            <Label
+                Text="{Binding WeatherItem.List[4].Main.Humidity, StringFormat='12 PM:                       Humidity: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+
+            <Label
+                Text="{Binding WeatherItem.List[5].Main.Humidity, StringFormat='3 PM:                        Humidity: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+
+            <Label
+                Text="{Binding WeatherItem.List[6].Main.Humidity, StringFormat='6 PM:                        Humidity: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+            <Label
+                Text="{Binding WeatherItem.List[7].Main.Humidity, StringFormat='9 PM:                        Humidity: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>  
+
         </StackLayout>
     
     </ContentPage.Content>

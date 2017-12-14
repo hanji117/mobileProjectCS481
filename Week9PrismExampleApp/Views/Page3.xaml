@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Week9PrismExampleApp.Views.Page3"
     Title="WindSpeed"
@@ -15,13 +16,20 @@
       </Style>
         </ResourceDictionary>
         </ContentPage.Resources>
+        <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="White" StepPercentage="0" />
+            <xfg:GradientStep StepColor="Blue" StepPercentage=".3" />
+            <xfg:GradientStep StepColor="Red" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
     <ContentPage.Content>
       
         <StackLayout>
               <Button
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
-            <Label Text="Page 3" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Label Text="WindSpeed Forecast" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 
             <!--tornado code-->
             <StackLayout Orientation="Horizontal"
@@ -29,7 +37,9 @@
             VerticalOptions="CenterAndExpand">
             <Image x:Name="tornado"
                 Source="tornado1.png" 
-                HorizontalOptions="Start"/>
+                HorizontalOptions="Start"
+
+                />
     
         </StackLayout>
 
@@ -40,7 +50,35 @@
 
             Clicked="Play_Clicked" />
         </StackLayout>
- 
+             <Label
+                Text="{Binding WeatherItem.List[0].Wind.Speed, StringFormat='12 AM:                       Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"
+            />
+             
+            <Label
+                Text="{Binding WeatherItem.List[1].Wind.Speed, StringFormat='3 AM:                        Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+            <Label
+                Text="{Binding WeatherItem.List[2].Wind.Speed, StringFormat='6 AM:                        Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+            <Label
+                Text="{Binding WeatherItem.List[3].Wind.Speed, StringFormat='9 AM:                        Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+
+            <Label
+                Text="{Binding WeatherItem.List[4].Wind.Speed, StringFormat='12 PM:                       Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+
+            <Label
+                Text="{Binding WeatherItem.List[5].Wind.Speed, StringFormat='3 PM:                        Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+
+            <Label
+                Text="{Binding WeatherItem.List[6].Wind.Speed, StringFormat='6 PM:                        Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>
+            <Label
+                Text="{Binding WeatherItem.List[7].Wind.Speed, StringFormat='9 PM:                        Wind Speed: {0}'}" 
+                TextColor="{StaticResource NormalTextColor}"/>  
 
             
             
