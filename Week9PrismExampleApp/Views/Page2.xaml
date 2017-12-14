@@ -15,7 +15,7 @@
       </Style>
         </ResourceDictionary>
         </ContentPage.Resources>
-	<ContentPage.Content>
+    <ContentPage.Content>
         
         <StackLayout>
             <Button
@@ -23,7 +23,27 @@
             Command="{Binding GoBackCommand}" />
             <Label Text="Page 2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 
+           <!--Rain code-->
+            <StackLayout Orientation="Horizontal"
+            Spacing="0"
+            VerticalOptions="CenterAndExpand">
+            <Image x:Name="rain"
+                Source="rain1.png" 
+                 WidthRequest = "200"
+                HeightRequest = "200"
+                HorizontalOptions="Start"/>
+           <!--Rain code-->
+          
+        </StackLayout>
+
+        <StackLayout Margin="20" VerticalOptions="End">
+            <Button Text="Play"
+                 
+               
+
+            Clicked="Play_Clicked" />
+        </StackLayout>
         </StackLayout>
     
-	</ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

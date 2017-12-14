@@ -15,18 +15,43 @@
       </Style>
         </ResourceDictionary>
         </ContentPage.Resources>
-	<ContentPage.Content>
+    <ContentPage.Content>
      
         <StackLayout>
+         
                <Button
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
             <Label Text="Page 4" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 
+             
+        <StackLayout 
+                Orientation="Horizontal"
+                Spacing="0"
+                VerticalOptions="CenterAndExpand">
+            <Image x:Name="cloud"
+                Source="cloud1.png" 
+                WidthRequest = "200"
+                HeightRequest = "200"
+                HorizontalOptions="Start"/>
+                <StackLayout Margin="20" VerticalOptions="End">
+            <Button Text="Rotat Right 270" CommandParameter="270" Clicked="Rotat_Clicked" />
+            <Button Text="Rotat Left 100" CommandParameter="-100" Clicked="Rotat_Clicked" />
+            <Button Text="ReRotae 100" CommandParameter="100" Clicked="ReRotae_Clicked" />
+            <Button Text="ReRotae -100" CommandParameter="-100" Clicked="ReRotae_Clicked" />
+                </StackLayout> 
+       </StackLayout>
+        <StackLayout Margin="20" VerticalOptions="End">
+            <Button Text="Play"
+                 
+            Clicked="Play_Clicked" />
+        </StackLayout>
+  
+            
             <Label
                 Text="{Binding WeatherItem.List[0].Wind.Speed, StringFormat='12 AM:                       Wind Speed: {0}'}" 
                 TextColor="{StaticResource NormalTextColor}"/>
         </StackLayout>
    
-	</ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

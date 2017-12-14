@@ -15,7 +15,7 @@
       </Style>
         </ResourceDictionary>
         </ContentPage.Resources>
-	<ContentPage.Content>
+    <ContentPage.Content>
       
         <StackLayout>
               <Button
@@ -23,12 +23,28 @@
             Command="{Binding GoBackCommand}" />
             <Label Text="Page 3" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 
-     
+            <!--tornado code-->
+            <StackLayout Orientation="Horizontal"
+            Spacing="0"
+            VerticalOptions="CenterAndExpand">
+            <Image x:Name="tornado"
+                Source="tornado1.png" 
+                HorizontalOptions="Start"/>
+    
+        </StackLayout>
+
+        <StackLayout Margin="20" VerticalOptions="End">
+            <Button Text="Play"
+                 
+               
+
+            Clicked="Play_Clicked" />
+        </StackLayout>
  
 
             
             
         </StackLayout>
    
-	</ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

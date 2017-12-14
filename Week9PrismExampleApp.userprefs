@@ -3,19 +3,23 @@
     <Files>
       <File FileName="Week9PrismExampleApp/ViewModels/MainPageViewModel.cs" Line="131" Column="13" />
       <File FileName="Week9PrismExampleApp/Views/MainPage.xaml" Line="97" Column="1" />
-      <File FileName="Week9PrismExampleApp/Views/Page1.xaml" Line="18" Column="33" />
-      <File FileName="Week9PrismExampleApp/Views/Page2.xaml" Line="17" Column="33" />
+      <File FileName="Week9PrismExampleApp/Views/Page1.xaml" Line="81" Column="1" />
+      <File FileName="Week9PrismExampleApp/Views/Page2.xaml" Line="50" Column="1" />
       <File FileName="Week9PrismExampleApp/Views/SamplePageForNavigation.xaml" Line="17" Column="15" />
-      <File FileName="Week9PrismExampleApp/Views/Page4.xaml" Line="15" Column="15" />
+      <File FileName="Week9PrismExampleApp/Views/Page4.xaml" Line="58" Column="1" />
       <File FileName="Week9PrismExampleApp/ViewModels/MoreInfoPageViewModel.cs" Line="43" Column="40" />
       <File FileName="Week9PrismExampleApp/Views/MoreInfoPage.xaml.cs" Line="1" Column="1" />
       <File FileName="Week9PrismExampleApp/App.xaml.cs" Line="31" Column="61" />
       <File FileName="Week9PrismExampleApp/App.xaml" Line="8" Column="1" />
       <File FileName="Week9PrismExampleApp/ApiKeys.cs" Line="1" Column="1" />
-      <File FileName="Week9PrismExampleApp/Views/Page3.xaml" Line="17" Column="33" />
+      <File FileName="Week9PrismExampleApp/Views/Page3.xaml" Line="51" Column="1" />
       <File FileName="Week9PrismExampleApp/ViewModels/Page1ViewModel.cs" Line="1" Column="1" />
       <File FileName="Week9PrismExampleApp/Views/MoreInfoPage.xaml" Line="17" Column="14" />
       <File FileName="Week9PrismExampleApp/ViewModels/Page4ViewModel.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp/Views/Page1.xaml.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp/Views/Page2.xaml.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp/Views/Page3.xaml.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp/Views/Page4.xaml.cs" Line="1" Column="1" />
       <File FileName="mobileProjectCS481 Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -29,7 +33,7 @@
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.Droid PreferredExecutionTarget="Android.SelectDevice" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.37D26010-5762-41F1-BC21-2B8B23314BA3">
+  <MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2CE38F38-1027-4570-AE9D-B7D2626CAF03">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.iOS>
 </Properties>

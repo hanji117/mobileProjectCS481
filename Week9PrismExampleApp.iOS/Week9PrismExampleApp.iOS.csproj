@@ -149,6 +149,32 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tornado5.png" />
+    <BundleResource Include="Resources\tornado4.png" />
+    <BundleResource Include="Resources\tornado3_.png" />
+    <BundleResource Include="Resources\tornado2.png" />
+    <BundleResource Include="Resources\tornado1.png" />
+    <BundleResource Include="Resources\cloud7.png" />
+    <BundleResource Include="Resources\cloud6.png" />
+    <BundleResource Include="Resources\cloud5.png" />
+    <BundleResource Include="Resources\cloud4.png" />
+    <BundleResource Include="Resources\cloud3.png" />
+    <BundleResource Include="Resources\cloud2.png" />
+    <BundleResource Include="Resources\cloud1.png" />
+    <BundleResource Include="Resources\sunsprite1.png" />
+    <BundleResource Include="Resources\sunsprite2.png" />
+    <BundleResource Include="Resources\sunsprite3.png" />
+    <BundleResource Include="Resources\sunsprite4.png" />
+    <BundleResource Include="Resources\sunsprite5.png" />
+    <BundleResource Include="Resources\sunsprite6.png" />
+    <BundleResource Include="Resources\rain6.png" />
+    <BundleResource Include="Resources\rain5.png" />
+    <BundleResource Include="Resources\rain4.png" />
+    <BundleResource Include="Resources\rain3.png" />
+    <BundleResource Include="Resources\rain2.png" />
+    <BundleResource Include="Resources\rain1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets')" />
 </Project>
